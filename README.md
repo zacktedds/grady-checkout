@@ -1,10 +1,6 @@
 # grady-checkout
 An app to make our lives much, much easier.
 
-## Contents
-1. Basic Project Goals
-1. Stretch Goals
-
 ## Basic Project Goals
 * Allow students to login; apply appropriate permissions
 * Display categorized list of equipment available for checkout
