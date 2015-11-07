@@ -11,4 +11,4 @@ An app to make our lives much, much easier.
 ## Stretch Goals
 * Connect to electronic database programmatically rather than hard-coding equipment info
 * Allow users to view past checkouts and active checkouts
-* Allow FESR employees to acces an admin view that shows active checkouts and expected check-ins
+* Allow FESR employees to access an admin view that shows active checkouts and expected check-ins
