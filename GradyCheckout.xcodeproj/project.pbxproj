@@ -401,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GradyCheckout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bridgetech.GradyCheckout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practicallyvampires.GradyCheckout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -412,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GradyCheckout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bridgetech.GradyCheckout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practicallyvampires.GradyCheckout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -484,6 +484,7 @@
 				060BBA3F1BEBBE9F00FF885A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		060BBA401BEBBE9F00FF885A /* Build configuration list for PBXNativeTarget "GradyCheckoutTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				060BBA421BEBBE9F00FF885A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		060BBA431BEBBE9F00FF885A /* Build configuration list for PBXNativeTarget "GradyCheckoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				060BBA451BEBBE9F00FF885A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
