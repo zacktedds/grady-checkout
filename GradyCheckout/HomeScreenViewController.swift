@@ -29,9 +29,12 @@ class HomeScreenViewController: UIViewController {
         return true
     }
     
-    @IBAction func proceedButton(sender: UIButton) {
-        print("Username: \(userNameField.text), ID Number: \(userIdField.text)")
+    @IBAction func proceedButton() {
+        let userName = userNameField.text!
+        let userId = userIdField.text!
+        
+        print("Username: \(userName), ID: \(userId)")
+        dismissViewControllerAnimated(true, completion: nil)
     }
-    
 }
 

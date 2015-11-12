@@ -9,6 +9,14 @@
 import Foundation
 
 struct EquipData {
+    let categories = [
+        "Cameras",
+        "Tripods",
+        "Lighting",
+        "Microphones",
+        "Audio Mixers & Recorders",
+        "Accessories"
+    ]
     let cameras = [
         [
             "name": "JVC GC-PX 100",
@@ -42,7 +50,7 @@ struct EquipData {
         ],
         [
             "name": "iPhone Tripod",
-            "category": "Tripod",
+            "category": "Tripods",
             "description": "Lightweight tripod designed to steady any iPhone or similarly-sized smartphone for photography or videography.",
             "contents": ["tripod", "mount head", "carrying case"],
             "classes": []
