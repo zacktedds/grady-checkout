@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GradyCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeScreenViewController" customModule="GradyCheckout" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,42 +17,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grady College" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waw-5i-sKb">
-                                <rect key="frame" x="74" y="114" width="172" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grady College" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waw-5i-sKb">
+                                <rect key="frame" x="70" y="114" width="180" height="27.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Field Equipment Supply Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YR-EZ-Ijl">
-                                <rect key="frame" x="46" y="150" width="229" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Equipment Supply Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YR-EZ-Ijl">
+                                <rect key="frame" x="42" y="149.5" width="237" height="20.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkout App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYV-tr-GO5">
-                                <rect key="frame" x="92" y="216" width="137" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkout App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYV-tr-GO5">
+                                <rect key="frame" x="88" y="215" width="145" height="24"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N4Q-2x-0x9">
-                                <rect key="frame" x="46" y="329" width="229" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N4Q-2x-0x9">
+                                <rect key="frame" x="42" y="328" width="237" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <connections>
-                                    <action selector="userNameField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XGp-re-kvA"/>
-                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UGA ID #" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rdt-R2-YnE">
-                                <rect key="frame" x="46" y="367" width="229" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UGA ID #" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rdt-R2-YnE">
+                                <rect key="frame" x="42" y="367" width="237" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <connections>
-                                    <action selector="userIdField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="H7U-Vu-sFy"/>
-                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-Ab-ztQ">
-                                <rect key="frame" x="46" y="438" width="229" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-Ab-ztQ">
+                                <rect key="frame" x="42" y="438" width="237" height="30"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.58823529411764708" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Begin Checkout">
@@ -59,15 +60,43 @@
                                 </state>
                                 <connections>
                                     <action selector="beginCheckoutButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1y-aq-nbU"/>
+                                    <action selector="proceedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmH-Qf-B9w"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.396078431372549" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="waw-5i-sKb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="33Q-B3-8pt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kIx-Ab-ztQ" secondAttribute="bottom" constant="100" id="7UZ-rl-mkX"/>
+                            <constraint firstItem="rdt-R2-YnE" firstAttribute="width" secondItem="N4Q-2x-0x9" secondAttribute="width" id="7jG-SS-Q2A"/>
+                            <constraint firstItem="rdt-R2-YnE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="8hA-L9-USu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rdt-R2-YnE" secondAttribute="trailing" constant="25" id="9fG-Y9-iB9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iYV-tr-GO5" secondAttribute="trailing" constant="71" id="CHh-Jb-8Ib"/>
+                            <constraint firstItem="3YR-EZ-Ijl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="Cis-v5-hQJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3YR-EZ-Ijl" secondAttribute="trailing" constant="25" id="Se4-QJ-8dd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="waw-5i-sKb" secondAttribute="trailing" constant="54" id="VEw-6B-9Xn"/>
+                            <constraint firstItem="rdt-R2-YnE" firstAttribute="height" secondItem="N4Q-2x-0x9" secondAttribute="height" id="VNh-Hk-3f7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N4Q-2x-0x9" secondAttribute="trailing" constant="25" id="ZcY-fT-oKh"/>
+                            <constraint firstItem="kIx-Ab-ztQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="ZmA-nG-eS9"/>
+                            <constraint firstItem="kIx-Ab-ztQ" firstAttribute="top" secondItem="rdt-R2-YnE" secondAttribute="bottom" constant="41" id="gIa-hq-zRU"/>
+                            <constraint firstItem="N4Q-2x-0x9" firstAttribute="top" secondItem="iYV-tr-GO5" secondAttribute="bottom" constant="89" id="lFC-Dq-vPR"/>
+                            <constraint firstItem="iYV-tr-GO5" firstAttribute="top" secondItem="3YR-EZ-Ijl" secondAttribute="bottom" constant="45" id="oAS-aC-cun"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kIx-Ab-ztQ" secondAttribute="trailing" constant="25" id="pWR-7Y-M7Y"/>
+                            <constraint firstItem="iYV-tr-GO5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="72" id="qor-WG-JJc"/>
+                            <constraint firstItem="N4Q-2x-0x9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="uPf-rT-PSD"/>
+                            <constraint firstItem="waw-5i-sKb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="w3X-7F-uhy"/>
+                            <constraint firstItem="3YR-EZ-Ijl" firstAttribute="top" secondItem="waw-5i-sKb" secondAttribute="bottom" constant="8" id="wgL-4q-wwI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userIdField" destination="rdt-R2-YnE" id="eH6-N0-FjF"/>
+                        <outlet property="userNameField" destination="N4Q-2x-0x9" id="7bQ-di-piV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="529"/>
+            <point key="canvasLocation" x="605" y="464"/>
         </scene>
     </scenes>
 </document>
