@@ -182,7 +182,7 @@
         <!--Equipment Detail-->
         <scene sceneID="PE0-Eh-V2u">
             <objects>
-                <viewController id="Eq0-7a-fM9" sceneMemberID="viewController">
+                <viewController id="Eq0-7a-fM9" customClass="EquipmentDetailViewController" customModule="GradyCheckout" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xNM-uX-EwP"/>
                         <viewControllerLayoutGuide type="bottom" id="Se5-QP-HWF"/>
@@ -224,6 +224,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Equipment Detail" id="0iM-KT-zkl"/>
+                    <connections>
+                        <outlet property="equipDescription" destination="2AD-gM-LYa" id="Apq-EZ-2GD"/>
+                        <outlet property="equipImage" destination="bdh-Qr-RGM" id="nU0-Jj-Tni"/>
+                        <outlet property="equipTitle" destination="40d-om-HlF" id="Hgr-ID-YwY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3z-qq-haW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
