@@ -3,7 +3,7 @@
 //  GradyCheckout
 //
 //  Created by Zack Tedders on 11/5/15.
-//  Copyright © 2015 Bridging Technologies. All rights reserved.
+//  Copyright © 2015 Practically Vampires. All rights reserved.
 //
 
 import UIKit

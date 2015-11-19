@@ -34,7 +34,9 @@ class HomeScreenViewController: UIViewController {
         let userId = userIdField.text!
         
         print("Username: \(userName), ID: \(userId)")
-        dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
+
+
 }
 

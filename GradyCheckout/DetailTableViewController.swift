@@ -1,18 +1,15 @@
 //
-//  CategoriesViewController.swift
+//  DetailTableViewController.swift
 //  GradyCheckout
 //
-//  Created by Zack Tedders on 11/12/15.
+//  Created by Zack Tedders on 11/17/15.
 //  Copyright © 2015 Practically Vampires. All rights reserved.
 //
 
 import UIKit
 
-class CategoriesViewController: UITableViewController {
-    
-    let categories = EquipData().categories
-    var selection = Selection().identifier
-    
+class DetailTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,19 +19,27 @@ class CategoriesViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         tableView.reloadData()
-        
-        // MARK: - Modal Segue to Sign-In Screen
-        
-        self.performSegueWithIdentifier("signInModalSegue", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Detail Setup
+    
+    var detailItem: AnyObject? {
+        didSet {
+            
+        }
+    }
+
 
     // MARK: - Table view data source
     
+    let selection = Selection().identifier
+    let detailList = EquipData().cameras
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -42,19 +47,17 @@ class CategoriesViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return categories.count
+        return detailList.count
     }
 
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("equipCell", forIndexPath: indexPath)
         
-        let category = categories[indexPath.row]
-        
-        cell.textLabel!.text = category
+        let equipDetail = detailList[indexPath.row]
+        cell.textLabel!.text! = equipDetail["name"] as! String!
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
-        
-        selection = cell.textLabel!.text!
-        
+
         return cell
     }
 
@@ -94,16 +97,14 @@ class CategoriesViewController: UITableViewController {
     }
     */
 
-
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "showEquipmentDetail" {
-            
-        }
     }
+    */
 
 }
