@@ -11,5 +11,5 @@ import Foundation
 struct UserData {
     var userName = ""
     var userIdNumber = ""
-    let allowedNumbers = ["810358699", "810123456", "810000000"]
+    let allowedNumbers = ["810358699", "810123456", "810360364", "810000000"]
 }

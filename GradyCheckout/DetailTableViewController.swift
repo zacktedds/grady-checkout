@@ -25,15 +25,6 @@ class DetailTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - Detail Setup
-    
-    var detailItem: AnyObject? {
-        didSet {
-            
-        }
-    }
-
 
     // MARK: - Table view data source
     

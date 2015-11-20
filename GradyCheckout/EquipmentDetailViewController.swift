@@ -9,12 +9,14 @@
 import UIKit
 
 class EquipmentDetailViewController: UIViewController {
-
+    
+    // MARK: Outlet Declarations
+    
     @IBOutlet weak var equipTitle: UILabel!
     @IBOutlet weak var equipImage: UIImageView!
     @IBOutlet weak var equipDescription: UILabel!
     
-    
+    // MARK: onLoad Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class EquipmentDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

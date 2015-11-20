@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CRQ-dr-RPF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CRQ-dr-RPF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -94,11 +94,11 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="npi-9c-c0n" id="oDq-w9-U3k">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dCa-ay-R2W">
-                                            <rect key="frame" x="73" y="0.0" width="212" height="43"/>
+                                            <rect key="frame" x="74" y="0.0" width="211" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <gestureRecognizers/>
@@ -106,8 +106,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Cameras_Icon" id="O9y-sw-cEF">
-                                            <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Accessories_Icon" id="O9y-sw-cEF">
+                                            <rect key="frame" x="15" y="0.0" width="44" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </imageView>
@@ -148,15 +148,15 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f6x-wX-BnS" id="tZ3-dT-eAL">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bv1-fh-IYC">
-                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -192,29 +192,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JVC_GZ_EX555" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-Qr-RGM">
-                                <rect key="frame" x="54" y="107" width="213" height="213"/>
+                                <rect key="frame" x="54" y="106" width="213" height="213"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bdh-Qr-RGM" secondAttribute="height" multiplier="1:1" id="p1F-GC-Bto"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a description. It has things that go here that tell you about things and stuff and things" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AD-gM-LYa">
-                                <rect key="frame" x="16" y="345" width="288" height="51"/>
+                                <rect key="frame" x="16" y="344" width="288" height="50.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40d-om-HlF">
-                                <rect key="frame" x="134" y="78" width="52" height="21"/>
+                                <rect key="frame" x="134" y="78" width="52" height="20.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJZ-e1-uzP">
+                                <rect key="frame" x="80" y="483" width="160" height="32"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.58823529409999997" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Add To Checkout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2AD-gM-LYa" firstAttribute="top" secondItem="bdh-Qr-RGM" secondAttribute="bottom" constant="25" id="13u-9g-CDS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bdh-Qr-RGM" secondAttribute="trailing" constant="37" id="5kH-0g-wz0"/>
+                            <constraint firstItem="AJZ-e1-uzP" firstAttribute="leading" secondItem="kTL-w5-o4u" secondAttribute="leadingMargin" constant="64" id="9wq-i7-wHv"/>
                             <constraint firstItem="40d-om-HlF" firstAttribute="leading" secondItem="kTL-w5-o4u" secondAttribute="leadingMargin" constant="118" id="D0u-7v-H6G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AJZ-e1-uzP" secondAttribute="trailing" constant="64" id="Q5e-qF-teg"/>
+                            <constraint firstItem="AJZ-e1-uzP" firstAttribute="top" secondItem="2AD-gM-LYa" secondAttribute="bottom" constant="88" id="SkI-wT-c9y"/>
                             <constraint firstItem="40d-om-HlF" firstAttribute="top" secondItem="xNM-uX-EwP" secondAttribute="bottom" constant="14" id="XXZ-7y-o4a"/>
                             <constraint firstAttribute="leadingMargin" secondItem="2AD-gM-LYa" secondAttribute="leading" id="aj3-4g-Rin"/>
                             <constraint firstItem="bdh-Qr-RGM" firstAttribute="leading" secondItem="kTL-w5-o4u" secondAttribute="leadingMargin" constant="38" id="jD6-7j-eVY"/>
@@ -255,7 +272,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Cameras_Icon" width="500" height="500"/>
+        <image name="Accessories_Icon" width="250" height="250"/>
         <image name="JVC_GZ_EX555" width="500" height="500"/>
         <image name="Logo" width="1351" height="1227"/>
     </resources>
