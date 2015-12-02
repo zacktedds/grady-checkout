@@ -16,10 +16,10 @@
 		061CE4721BFE2B790049B85A /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061CE4711BFE2B790049B85A /* DetailTableViewController.swift */; };
 		061CE4741BFE360A0049B85A /* EquipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061CE4731BFE360A0049B85A /* EquipmentDetailViewController.swift */; };
 		0624F9AB1BFE378E004ADF18 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624F9AA1BFE378E004ADF18 /* UserData.swift */; };
+		064A19081C0E012800A608E1 /* EquipSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A19071C0E012800A608E1 /* EquipSelect.swift */; };
 		0650433E1BF25892009BB4E1 /* EquipData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650433D1BF25892009BB4E1 /* EquipData.swift */; };
 		87C7B3891BFB9D300028B35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C7B3881BFB9D300028B35E /* Assets.xcassets */; };
 		87C7B38B1BFB9F210028B35E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C7B38A1BFB9F210028B35E /* Launch Screen.storyboard */; };
-		9B0801E61BFBF47600A83428 /* PleaseFuckingWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0801E51BFBF47600A83428 /* PleaseFuckingWork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		061CE4711BFE2B790049B85A /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = "../../../../../nmix 4310 group project/Project Files/GradyCheckout/grady-checkout/GradyCheckout/DetailTableViewController.swift"; sourceTree = "<group>"; };
 		061CE4731BFE360A0049B85A /* EquipmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentDetailViewController.swift; sourceTree = "<group>"; };
 		0624F9AA1BFE378E004ADF18 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		064A19071C0E012800A608E1 /* EquipSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipSelect.swift; sourceTree = "<group>"; };
 		0650433D1BF25892009BB4E1 /* EquipData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipData.swift; sourceTree = "<group>"; };
 		87C7B3881BFB9D300028B35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../nmix 4310 group project/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		87C7B38A1BFB9F210028B35E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		9B0801E51BFBF47600A83428 /* PleaseFuckingWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PleaseFuckingWork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,15 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				060BBA181BEBBE9F00FF885A /* AppDelegate.swift */,
-				060BBA1A1BEBBE9F00FF885A /* HomeScreenViewController.swift */,
-				061AA7EA1BF4F8220004C31C /* CategoriesViewController.swift */,
-				9B0801E51BFBF47600A83428 /* PleaseFuckingWork.swift */,
-				060BBA1C1BEBBE9F00FF885A /* Main.storyboard */,
-				0624F9AA1BFE378E004ADF18 /* UserData.swift */,
-				061CE4731BFE360A0049B85A /* EquipmentDetailViewController.swift */,
-				87C7B38A1BFB9F210028B35E /* Launch Screen.storyboard */,
-				061CE4711BFE2B790049B85A /* DetailTableViewController.swift */,
-				0650433D1BF25892009BB4E1 /* EquipData.swift */,
+				9BEEFBCB1C0E08EA00EFDEFF /* Controllers */,
+				9BEEFBCC1C0E08FC00EFDEFF /* Models */,
+				9BEEFBCD1C0E090C00EFDEFF /* Views */,
 				87C7B3881BFB9D300028B35E /* Assets.xcassets */,
 				060BBA241BEBBE9F00FF885A /* Info.plist */,
 			);
@@ -141,6 +135,36 @@
 				060BBA3A1BEBBE9F00FF885A /* Info.plist */,
 			);
 			path = GradyCheckoutUITests;
+			sourceTree = "<group>";
+		};
+		9BEEFBCB1C0E08EA00EFDEFF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				060BBA1A1BEBBE9F00FF885A /* HomeScreenViewController.swift */,
+				061AA7EA1BF4F8220004C31C /* CategoriesViewController.swift */,
+				061CE4731BFE360A0049B85A /* EquipmentDetailViewController.swift */,
+				061CE4711BFE2B790049B85A /* DetailTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9BEEFBCC1C0E08FC00EFDEFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0624F9AA1BFE378E004ADF18 /* UserData.swift */,
+				0650433D1BF25892009BB4E1 /* EquipData.swift */,
+				064A19071C0E012800A608E1 /* EquipSelect.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9BEEFBCD1C0E090C00EFDEFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				060BBA1C1BEBBE9F00FF885A /* Main.storyboard */,
+				87C7B38A1BFB9F210028B35E /* Launch Screen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +303,10 @@
 				061CE4721BFE2B790049B85A /* DetailTableViewController.swift in Sources */,
 				060BBA1B1BEBBE9F00FF885A /* HomeScreenViewController.swift in Sources */,
 				0624F9AB1BFE378E004ADF18 /* UserData.swift in Sources */,
-				9B0801E61BFBF47600A83428 /* PleaseFuckingWork.swift in Sources */,
 				061CE4741BFE360A0049B85A /* EquipmentDetailViewController.swift in Sources */,
 				060BBA191BEBBE9F00FF885A /* AppDelegate.swift in Sources */,
 				061AA7EB1BF4F8220004C31C /* CategoriesViewController.swift in Sources */,
+				064A19081C0E012800A608E1 /* EquipSelect.swift in Sources */,
 				0650433E1BF25892009BB4E1 /* EquipData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

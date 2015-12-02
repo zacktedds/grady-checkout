@@ -16,12 +16,17 @@ class EquipmentDetailViewController: UIViewController {
     @IBOutlet weak var equipImage: UIImageView!
     @IBOutlet weak var equipDescription: UILabel!
     
+    var selectList: [NSDictionary] = []
+    var selection = SelectedEquipment()
+    
     // MARK: onLoad Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        equipTitle.text! = selection.title!
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +34,7 @@ class EquipmentDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+
 
     /*
     // MARK: - Navigation

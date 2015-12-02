@@ -12,10 +12,13 @@ class HomeScreenViewController: UIViewController {
     
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var userIdField: UITextField!
+    
     var userData = UserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userNameField.tag = 0
+        userIdField.tag = 1
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,11 +27,22 @@ class HomeScreenViewController: UIViewController {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField == userNameField {
-            userIdField.becomeFirstResponder()
+        let nextTag: NSInteger = textField.tag + 1;
+        
+        if let nextResponder: UIResponder! = textField.superview!.viewWithTag(nextTag){
+            nextResponder.becomeFirstResponder()
         }
-        return true
+        else {
+            textField.resignFirstResponder()
+        }
+        return false
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        userNameField.endEditing(true)
+        userIdField.endEditing(true)
+    }
+    
     
     @IBAction func proceedButton() {
         userData.userName = userNameField.text!
@@ -42,7 +56,7 @@ class HomeScreenViewController: UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
         }
         else {
-            let alert = UIAlertController(title: "Permission Denied", message: "You do not have access to equipment. Please email your professor.", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "Permission Denied", message: "You do not have access to equipment. Please contact your professor.", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
