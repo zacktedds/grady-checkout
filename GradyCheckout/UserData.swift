@@ -8,6 +8,9 @@
 
 import Foundation
 
+//  Stores the user's name and UGA ID number, along with a list of approved numbers for
+//  field validation magic.
+
 struct UserData {
     var userName = ""
     var userIdNumber = ""

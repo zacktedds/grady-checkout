@@ -10,6 +10,8 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
     
+    // MARK: - Outlet Declarations
+    
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var userIdField: UITextField!
     

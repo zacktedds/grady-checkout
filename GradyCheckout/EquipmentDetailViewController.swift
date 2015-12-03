@@ -10,17 +10,19 @@ import UIKit
 
 class EquipmentDetailViewController: UIViewController {
     
-    // MARK: Outlet Declarations
+    // MARK: - Outlet Declarations
     
     @IBOutlet weak var equipTitle: UILabel!
     @IBOutlet weak var equipImage: UIImageView!
     @IBOutlet weak var equipDescription: UILabel!
     
+    // MARK: - Global variable declarations
+    
     var selectList: [NSDictionary] = []
     var selectCategory = ""
     var selectRow: Int = 0
     
-    // MARK: onLoad Methods
+    // MARK: - onLoad Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +37,14 @@ class EquipmentDetailViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addToCart() {
+        // Get the name of the selected equipment and add it to the cart Array
+        var cartData = Cart()
+        cartData.contents.append(equipTitle.text!)
+        print(cartData.contents)
+    }
 
 
     /*

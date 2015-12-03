@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+//  I know this looks like hell, but it's the way I got this damn thing to work.
+//  Basically, you pass the category of the selected equipment, and then the init method
+//  loads the appropriate stuff.
+
 struct SelectedEquipment {
     var title: String?
     var description: String?

@@ -12,22 +12,16 @@ class DetailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
     
+    // Pass the Array from the selected category that contains Dictionaries of equipment info
     var detailList: [NSDictionary] = []
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -40,7 +34,8 @@ class DetailTableViewController: UITableViewController {
         return detailList.count
     }
 
-
+    // MARK: - Dynamic table view setup
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("equipCell", forIndexPath: indexPath)
         

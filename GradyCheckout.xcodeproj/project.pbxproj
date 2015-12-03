@@ -20,6 +20,7 @@
 		0650433E1BF25892009BB4E1 /* EquipData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650433D1BF25892009BB4E1 /* EquipData.swift */; };
 		87C7B3891BFB9D300028B35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C7B3881BFB9D300028B35E /* Assets.xcassets */; };
 		87C7B38B1BFB9F210028B35E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C7B38A1BFB9F210028B35E /* Launch Screen.storyboard */; };
+		9BDA2FF11C10C14A008A0604 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA2FF01C10C14A008A0604 /* Cart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		0650433D1BF25892009BB4E1 /* EquipData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipData.swift; sourceTree = "<group>"; };
 		87C7B3881BFB9D300028B35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../nmix 4310 group project/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		87C7B38A1BFB9F210028B35E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9BDA2FF01C10C14A008A0604 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				0624F9AA1BFE378E004ADF18 /* UserData.swift */,
 				0650433D1BF25892009BB4E1 /* EquipData.swift */,
 				064A19071C0E012800A608E1 /* EquipSelect.swift */,
+				9BDA2FF01C10C14A008A0604 /* Cart.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				061CE4721BFE2B790049B85A /* DetailTableViewController.swift in Sources */,
+				9BDA2FF11C10C14A008A0604 /* Cart.swift in Sources */,
 				060BBA1B1BEBBE9F00FF885A /* HomeScreenViewController.swift in Sources */,
 				0624F9AB1BFE378E004ADF18 /* UserData.swift in Sources */,
 				061CE4741BFE360A0049B85A /* EquipmentDetailViewController.swift in Sources */,
