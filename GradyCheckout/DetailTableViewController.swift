@@ -55,12 +55,13 @@ class DetailTableViewController: UITableViewController {
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get selected row's category and pass along to SelectedEquipment()
         let detailViewController = segue.destinationViewController as! EquipmentDetailViewController
         let selectedIndexPath = self.tableView.indexPathForSelectedRow!
-        let cell = tableView.cellForRowAtIndexPath(selectedIndexPath)
-        var selection = SelectedEquipment()
-        selection.title! = cell!.textLabel!.text!
-        detailViewController.selectList = detailList
+        let row = selectedIndexPath.row
+        let equipData = detailList[row]
+        detailViewController.selectCategory = equipData["category"] as! String!
+        detailViewController.selectRow = row
     }
 
 }

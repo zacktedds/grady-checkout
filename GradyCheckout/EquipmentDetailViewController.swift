@@ -17,7 +17,8 @@ class EquipmentDetailViewController: UIViewController {
     @IBOutlet weak var equipDescription: UILabel!
     
     var selectList: [NSDictionary] = []
-    var selection = SelectedEquipment()
+    var selectCategory = ""
+    var selectRow: Int = 0
     
     // MARK: onLoad Methods
     
@@ -25,8 +26,11 @@ class EquipmentDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        equipTitle.text! = selection.title!
-        
+        // Set outlets to display selected equipment data
+        let selectedEquipment = SelectedEquipment(category: selectCategory, index: selectRow)
+        equipTitle.text! = selectedEquipment.title!
+        equipImage.image! = selectedEquipment.photo!
+        equipDescription.text! = selectedEquipment.description!
     }
 
     override func didReceiveMemoryWarning() {
